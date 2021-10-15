@@ -1,0 +1,162 @@
+/* ============================================================================
+                GENERAL
+=============================================================================== */
+
+
+/* ------------- Schriften ------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Merriweather', serif; */
+
+
+/* ------------- Farben ------------- */
+
+
+/* Farbe: #202020, #24bff2, #fff, #F5FBFE.
+Farbe social media: #3b5998, #fcaf45, #55acee, #c4302b */
+
+
+/* ------------- Gestaltung ------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+}
+
+
+/* ============================================================================
+                HEADER - NAV
+=============================================================================== */
+
+nav {
+    padding: 1% 0;
+}
+
+nav ul {
+    text-align: right;
+    padding-right: 2%;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #202020;
+    padding: 1vw;
+}
+
+
+/* ============================================================================
+                MAIN - Section 1 (Bilder links-rechts)
+=============================================================================== */
+
+main h1 {
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+     /* text-align: right;
+    line-height: 20vh; */
+}
+
+main p {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+     /* text-align: right;
+    line-height: 20vh; */
+}
+
+
+
+
+
+main section:nth-of-type(1){
+    padding: 5vh 0 0 0;
+}
+
+
+
+main section:nth-of-type(1) div{
+    margin: 30vh 5%;
+    padding: 0 0 45vh 0;
+    /* width: 35vw; */
+}
+
+
+main section:nth-of-type(1) div:nth-of-type(even) {
+    /* text-align: right; */
+    padding-left: 45%;
+}
+
+main section:nth-of-type(1) div:nth-of-type(odd) {
+    padding-right: 45%;
+}
+
+
+/* ------------- Background-Images ------------- */
+
+
+main section:nth-of-type(1) div:nth-of-type(1){
+    background: url("../img/illustration1.gif") right/contain no-repeat;
+}
+
+main section:nth-of-type(1) div:nth-of-type(2){
+    background: url("../img/illustration2.png") left/contain no-repeat;
+}
+
+main section:nth-of-type(1) div:nth-of-type(3){
+    background: url("../img/illustration3.png") right/contain no-repeat;
+}
+
+
+/* ============================================================================
+                MAIN - Section 2 (drei Bilder)
+=============================================================================== */
+
+main section:nth-of-type(2) {
+    text-align: center;
+}
+
+main section:nth-of-type(2) div {
+    padding-top: 3%
+}
+
+main section:nth-of-type(2) img {
+    width: 25%;
+}
+
+
+
+/* ============================================================================
+                MAIN - Section 3 (sechs Bilder untereinander)
+=============================================================================== */
+
+main section:nth-of-type(3) {
+    text-align: center;
+}
+
+main section:nth-of-type(3) div {
+    padding-top: 3%
+}
+
+main section:nth-of-type(3) img {
+    width: 35%;
+}
+
+
+/* ============================================================================
+                MAIN - Section 4 (zentrierter Text)
+=============================================================================== */
+
+
