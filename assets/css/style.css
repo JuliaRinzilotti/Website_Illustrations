@@ -1,6 +1,6 @@
-/* ============================================================================
+/* ============================================================
                 GENERAL
-=============================================================================== */
+=============================================================== */
 
 
 /* ------------- Schriften ------------- */
@@ -26,10 +26,33 @@ Farbe social media: #3b5998, #fcaf45, #55acee, #c4302b */
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     max-width: 1440px;
 }
 
+main, footer {
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-size: 5.6rem;
+    color: #202020;
+    font-weight: 500;
+    /* padding-top: 1vh; */
+    padding-bottom: 30px;
+}
+
+p {
+    color: rgb(77, 77, 77);
+    line-height: 3.8rem;
+}
+a {
+    text-decoration: none;
+}
 
 /* ============================================================================
                 HEADER - NAV
@@ -53,9 +76,20 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
     color: #202020;
     padding: 1vw;
+}
+
+
+/* ============================================================================
+                MAIN - Generals
+=============================================================================== */
+
+
+main p {
+    font-size: 2.2rem;
+     /* text-align: right;
+    line-height: 20vh; */
 }
 
 
@@ -63,61 +97,110 @@ nav ul li a {
                 MAIN - Section 1 (Bilder links-rechts)
 =============================================================================== */
 
-main h1 {
-    font-size: 50px;
-    font-family: 'Merriweather', serif;
-     /* text-align: right;
-    line-height: 20vh; */
-}
-
-main p {
-    font-family: 'Merriweather', serif;
-    font-size: 20px;
-     /* text-align: right;
-    line-height: 20vh; */
-}
 
 
+/* =============== Article 1 =============== */
 
-
-
-main section:nth-of-type(1){
-    padding: 5vh 0 0 0;
-}
-
-
-
-main section:nth-of-type(1) div{
-    margin: 30vh 5%;
-    padding: 0 0 45vh 0;
+main section:nth-of-type(1) article:nth-of-type(1) {
+    /* margin-left: 5%; */
+    /* margin-right: 5%; */
+    padding: 19vh 0 25vh 10vw;
+    /* padding-right: 200vw; */
     /* width: 35vw; */
+    margin-bottom: 8vh;
 }
 
-
-main section:nth-of-type(1) div:nth-of-type(even) {
-    /* text-align: right; */
-    padding-left: 45%;
-}
-
-main section:nth-of-type(1) div:nth-of-type(odd) {
-    padding-right: 45%;
-}
-
-
-/* ------------- Background-Images ------------- */
-
-
-main section:nth-of-type(1) div:nth-of-type(1){
+main section:nth-of-type(1) article:nth-of-type(1){
     background: url("../img/illustration1.gif") right/contain no-repeat;
+    background-size: 37%;
 }
 
-main section:nth-of-type(1) div:nth-of-type(2){
+main section:nth-of-type(1) article:nth-of-type(1) {
+    padding-right: 50%;
+}
+
+
+/* ------------- Buttons ------------- */
+
+
+main section:nth-of-type(1) article div {
+    padding-top: 2vh;
+}
+
+main section:nth-of-type(1) article div button {
+    font-family: 'Merriweather', serif;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(10, 10, 10, 0.2);
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 10vw;
+} 
+
+main section:nth-of-type(1) article button:nth-of-type(1){
+    color: #fff;
+    font-size: 1.6rem;
+    background-color:black;
+    margin-right: 20px;
+    border-style: none;
+}
+
+main section:nth-of-type(1) article button:nth-of-type(2){
+    background-color:#fff;
+    /* color: rgb(77, 77, 77); */
+    font-size: 1.6rem;
+    border-style: none;
+}
+
+
+
+/* =============== Article 2 =============== */
+
+main section:nth-of-type(1) article:nth-of-type(2) {
+    margin-bottom: 10vh;
+    margin-left: 10vw;
+    padding: 26vh 7vw 25vh 44%;
+
+}
+
+main section:nth-of-type(1) article:nth-of-type(2){
     background: url("../img/illustration2.png") left/contain no-repeat;
+    background-size: 30%;
 }
 
-main section:nth-of-type(1) div:nth-of-type(3){
-    background: url("../img/illustration3.png") right/contain no-repeat;
+
+/* =============== Article 3 =============== */
+
+main section:nth-of-type(1) article:nth-of-type(3) {
+    /* margin-left: 5%; */
+    /* margin-right: 5%; */
+    padding: 18vh 0 25vh 10vw;
+    /* padding-right: 200vw; */
+    /* width: 35vw; */
+    margin-bottom: 12vh;
 }
+
+main section:nth-of-type(1) article:nth-of-type(3){
+    background: url("../img/illustration3.png") right/contain no-repeat;
+    background-size: 30%;
+}
+
+
+
+
+main section:nth-of-type(1) article:nth-of-type(odd) {
+    padding-right: 50%;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* ============================================================================
@@ -136,8 +219,6 @@ main section:nth-of-type(2) img {
     width: 25%;
 }
 
-
-
 /* ============================================================================
                 MAIN - Section 3 (sechs Bilder untereinander)
 =============================================================================== */
@@ -154,9 +235,127 @@ main section:nth-of-type(3) img {
     width: 35%;
 }
 
-
 /* ============================================================================
                 MAIN - Section 4 (zentrierter Text)
 =============================================================================== */
 
+main section:nth-of-type(4) {
+    text-align: center;
+}
 
+/* =============== Article =============== */
+
+main section:nth-of-type(4) article {
+    display: inline-block;
+    background-color: #F5FBFE;
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+main section:nth-of-type(4) article p:nth-of-type(1) {
+    color: black;
+}
+
+main section:nth-of-type(4) article p:nth-of-type(2) {
+    color: rgb(131, 124, 124);
+    font-size: 2rem;
+}
+
+main section:nth-of-type(4) article h1 {
+    padding-bottom: 60px;
+}
+
+main section:nth-of-type(4) article ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+main section:nth-of-type(4) article ul li {
+    list-style: none;
+    font-size: 1.6rem;
+    font-family: 'Merriweather', serif;
+    line-height: 2.6rem;
+}
+
+main section:nth-of-type(4) article p:nth-of-type(3) {
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #24bff2; 
+    padding: 16px 60px;
+    border-radius: 5px;
+}
+
+/* 
+display: inline-block;
+list-style: none;
+text-transform: uppercase;
+font-family: 'Lato', sans-serif;
+font-size: 16px; */
+/* 
+
+/* ============================================================================
+                FOOTER
+=============================================================================== */
+
+footer {
+    text-align:center;
+    padding-bottom: 20px;
+}
+
+footer p:nth-of-type(1n+1) {
+    color: grey;
+    font-size: 1.4rem;
+}
+
+footer a {
+    color: #202020;
+    font-size: 1.4rem;
+}
+
+/* =============== Social Media-Links =============== */
+
+footer ul {
+    /* padding */
+}
+
+footer ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+footer ul li a {
+    color:#202020;
+    /* padding:  */
+}
+
+footer ul li:nth-of-type(1) {
+    color: #3b5998;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+footer ul li:nth-of-type(3) {
+    color: #fcaf45;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+footer ul li:nth-of-type(5) {
+    color: #3b5998;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+footer ul li:nth-of-type(7) {
+    color: #c4302b ;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+/* ============================================================================
+                ENDE
+=============================================================================== */
