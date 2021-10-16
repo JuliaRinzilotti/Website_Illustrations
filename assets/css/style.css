@@ -50,6 +50,7 @@ p {
     color: rgb(77, 77, 77);
     line-height: 3.8rem;
 }
+
 a {
     text-decoration: none;
 }
@@ -80,11 +81,9 @@ nav ul li a {
     padding: 1vw;
 }
 
-
 /* ============================================================================
                 MAIN - Generals
 =============================================================================== */
-
 
 main p {
     font-size: 2.2rem;
@@ -92,11 +91,9 @@ main p {
     line-height: 20vh; */
 }
 
-
 /* ============================================================================
                 MAIN - Section 1 (Bilder links-rechts)
 =============================================================================== */
-
 
 
 /* =============== Article 1 =============== */
@@ -119,9 +116,7 @@ main section:nth-of-type(1) article:nth-of-type(1) {
     padding-right: 50%;
 }
 
-
 /* ------------- Buttons ------------- */
-
 
 main section:nth-of-type(1) article div {
     padding-top: 2vh;
@@ -148,60 +143,36 @@ main section:nth-of-type(1) article button:nth-of-type(1){
 
 main section:nth-of-type(1) article button:nth-of-type(2){
     background-color:#fff;
-    /* color: rgb(77, 77, 77); */
     font-size: 1.6rem;
     border-style: none;
 }
-
-
 
 /* =============== Article 2 =============== */
 
 main section:nth-of-type(1) article:nth-of-type(2) {
     margin-bottom: 10vh;
     margin-left: 10vw;
-    padding: 26vh 7vw 25vh 44%;
-
+    padding: 22vh 7vw 25vh 40.5%;
+    margin: 15vh 10vw;
 }
 
 main section:nth-of-type(1) article:nth-of-type(2){
     background: url("../img/illustration2.png") left/contain no-repeat;
-    background-size: 30%;
-}
-
+    background-size: 38%;
+} 
 
 /* =============== Article 3 =============== */
 
 main section:nth-of-type(1) article:nth-of-type(3) {
-    /* margin-left: 5%; */
-    /* margin-right: 5%; */
-    padding: 18vh 0 25vh 10vw;
-    /* padding-right: 200vw; */
-    /* width: 35vw; */
-    margin-bottom: 12vh;
+
+    padding: 30vh 40% 20vh 2vw;
+    margin: 12vh 8vw;
 }
 
 main section:nth-of-type(1) article:nth-of-type(3){
     background: url("../img/illustration3.png") right/contain no-repeat;
-    background-size: 30%;
+    background-size: 38%;
 }
-
-
-
-
-main section:nth-of-type(1) article:nth-of-type(odd) {
-    padding-right: 50%;
-}
-
-
-
-
-
-
-
-
-
-
 
 /* ============================================================================
                 MAIN - Section 2 (drei Bilder)
@@ -209,14 +180,25 @@ main section:nth-of-type(1) article:nth-of-type(odd) {
 
 main section:nth-of-type(2) {
     text-align: center;
+    margin: 25vh 3vw; 
+}
+
+main section:nth-of-type(2) article {
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 11vh;
 }
 
 main section:nth-of-type(2) div {
     padding-top: 3%
 }
 
-main section:nth-of-type(2) img {
-    width: 25%;
+main section:nth-of-type(2) div img {
+    width: 28%;
+}
+
+main section:nth-of-type(2) div img:hover {
+    box-shadow: 0px 4px 8px rgba(10, 10, 10, 0.2);
 }
 
 /* ============================================================================
@@ -227,12 +209,23 @@ main section:nth-of-type(3) {
     text-align: center;
 }
 
+main section:nth-of-type(3) article {
+    padding-left: 24%;
+    padding-right: 24%;
+    padding-bottom: 11vh;
+}
+
 main section:nth-of-type(3) div {
-    padding-top: 3%
+    padding-top: 3%;
 }
 
 main section:nth-of-type(3) img {
-    width: 35%;
+    width: 38%;
+    margin: 0 2.5vw 14vh 2.5vw; 
+}
+
+main section:nth-of-type(3) img:hover {
+    box-shadow: 0px 4px 8px rgba(10, 10, 10, 0.2);
 }
 
 /* ============================================================================
@@ -241,10 +234,16 @@ main section:nth-of-type(3) img {
 
 main section:nth-of-type(4) {
     text-align: center;
+    margin-top: 8vh;
 }
 
 /* =============== Article =============== */
 
+main section:nth-of-type(4) div {
+    padding-left: 24%;
+    padding-right: 24%;
+    padding-bottom: 5vh;
+}
 main section:nth-of-type(4) article {
     display: inline-block;
     background-color: #F5FBFE;
@@ -265,6 +264,7 @@ main section:nth-of-type(4) article p:nth-of-type(2) {
 
 main section:nth-of-type(4) article h1 {
     padding-bottom: 60px;
+    padding-top: 55px;
 }
 
 main section:nth-of-type(4) article ul {
@@ -284,17 +284,9 @@ main section:nth-of-type(4) article p:nth-of-type(3) {
     font-size: 1.6rem;
     color: #fff;
     background-color: #24bff2; 
-    padding: 16px 60px;
+    padding: 8px 60px;
     border-radius: 5px;
 }
-
-/* 
-display: inline-block;
-list-style: none;
-text-transform: uppercase;
-font-family: 'Lato', sans-serif;
-font-size: 16px; */
-/* 
 
 /* ============================================================================
                 FOOTER
@@ -303,11 +295,13 @@ font-size: 16px; */
 footer {
     text-align:center;
     padding-bottom: 20px;
+    padding-top: 18vh;
 }
 
 footer p:nth-of-type(1n+1) {
     color: grey;
     font-size: 1.4rem;
+    padding-top: 2vh;
 }
 
 footer a {
@@ -315,11 +309,12 @@ footer a {
     font-size: 1.4rem;
 }
 
-/* =============== Social Media-Links =============== */
-
-footer ul {
-    /* padding */
+footer a:nth-of-type(1) {
+    display: block;
+    margin-top: 10px;
 }
+
+/* =============== Social Media-Links =============== */
 
 footer ul li {
     display: inline-block;
@@ -329,7 +324,6 @@ footer ul li {
 
 footer ul li a {
     color:#202020;
-    /* padding:  */
 }
 
 footer ul li:nth-of-type(1) {
